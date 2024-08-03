@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+// # build with commend 
+
+
+// * create nextjs app
+ npx create-next-app@latest
+
+// * initialize the shadcn 
+ npx shadcn-ui@latest init
+
+// * using shadcn for dropdown-menu
+  npx shadcn-ui@latest add dropdown-menu
+
+
+// * I used zustand  for managing the variable instead of using redux tool kit
+
+
+// #  npx shadcn-ui@latest add skeleton
+
+  for showing some skeleton before rendering the page
