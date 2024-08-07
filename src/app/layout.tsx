@@ -10,13 +10,12 @@ const LazyQuiz = React.lazy(() => import('./@quiz/page'));
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children,
-  quiz,
-}: Readonly<{
+interface LayoutProps{
   children: React.ReactNode,
   quiz: React.ReactNode
-}>) {
+}
+
+export default function RootLayout({children}:LayoutProps ){
 
   const config = useQuiz((state:any)=>state.config)
   let render = config.status === 'start' ? <LazyQuiz/> :children;
